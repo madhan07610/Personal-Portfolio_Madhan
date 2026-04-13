@@ -72,11 +72,11 @@ async function init(){
   try{
     const pr = await fetch(`${API}/api/profile`);
     const profile = await pr.json();
-    const name = (profile && profile.name) ? profile.name.toUpperCase() : 'GUDI BHANU TEJA';
+    const name = (profile && profile.name) ? profile.name.toUpperCase() : 'AKKIM MADHAN';
     document.getElementById('siteLogo').textContent = name;
     document.title = 'Education - ' + (profile.name || 'Portfolio');
   }catch(e){
-    document.getElementById('siteLogo').textContent = 'GUDI BHANU TEJA';
+    document.getElementById('siteLogo').textContent = 'AKKIM MADHAN';
   }
   document.getElementById('siteLogo').classList.add('ready');
 
