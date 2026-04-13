@@ -68,7 +68,7 @@
       try{
         const pr = await fetch(`${API}/api/profile`);
         const profile = await pr.json();
-        const name = (profile && profile.name) ? profile.name.toUpperCase() : 'GUDI BHANU TEJA';
+        const name = (profile && profile.name) ? profile.name.toUpperCase() : 'AKKIM MADHAN';
         document.getElementById('siteLogo').textContent = name;
         document.title = 'Resume - ' + (profile.name || 'Portfolio');
         document.getElementById('siteLogo').classList.add('ready');
@@ -85,7 +85,7 @@
             <a class="btn-download" href="${download}" target="_blank" download><i class="fas fa-download"></i> Download</a>
           </div>`;
       }catch(err){
-        document.getElementById('siteLogo').textContent = 'GUDI BHANU TEJA';
+        document.getElementById('siteLogo').textContent = 'AKKIM MADHAN';
         document.getElementById('siteLogo').classList.add('ready');
         document.getElementById('resumeAction').innerHTML = `<div class="no-resume">⚠️ Server not reachable.<br>Make sure the backend is running.</div>`;
       }
